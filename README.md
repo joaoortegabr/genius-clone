@@ -1,4 +1,8 @@
 # genius-clone-javascript
 Clone of Genius game in Javascript for DIO exercise.
 
-Still have some issues lightning color areas.
+Project increments:
+- Light sequence issues fixed.
+- Highest score saved in storage.
+- Buttons locked after game is over.
+- Added sound.
