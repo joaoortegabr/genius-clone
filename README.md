@@ -6,3 +6,7 @@ Project increments:
 - Highest score saved in storage.
 - Buttons locked after game is over.
 - Added sound.
+
+
+Game can be played at:
+https://almost-a-genious.netlify.app/
