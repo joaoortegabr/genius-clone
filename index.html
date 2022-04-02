@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Genius Clone</title>
+    <title>Almost a Genius</title>
 </head>
 <body>
-    <h1>Genius Clone</h1>
+    <h1>Almost a Genius</h1>
+    <h3>Game record: <span id="record">0</span></h3>
     <div class="main-game">
-        <div class="genius">
+        <div id="genius" class="disabled">
             <div class="blue"></div>
             <div class="yellow"></div>
             <div class="red"></div>
@@ -18,7 +19,21 @@
         </div>
     </div>
 
-
+    <div id="game-control">
+        <ul>
+            <li>
+                <button id="play" class="play-btn">
+                    Start new game
+                </button>
+            </li>
+            <li> 
+                <button id="reset" class="reset-btn">
+                    Reset game record
+                </button>
+            </li>  
+        </ul>
+    </div>
+    
     <script type="text/javascript" src="./script.js" ></script>
 </body>
 </html>

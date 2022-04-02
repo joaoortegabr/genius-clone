@@ -1,19 +1,26 @@
 body {
     margin: 0;
-    background-color: #adb3bd;
+    background-color: #f7f7f7;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+}
+
 .main-game {
-    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.genius {
+#genius {
     display: grid;
     grid-template-areas: 'green-side red-side' 'yellow-side blue-side';
     grid-gap: 10px;
@@ -23,32 +30,136 @@ body {
     margin-top: 20px;
     width: 400px;
     height: 400px;
+    cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .green {
     grid-area: green-side;
-    background-color:  rgb(14, 117, 14);
+    background-color:  green;
     border-top-left-radius: 100%;
 }
 
 .red {
     grid-area: red-side;
-    background-color: rgb(197, 24, 24);
+    background-color: red;
     border-top-right-radius: 100%;
 }
 
 .yellow {
     grid-area: yellow-side;
-    background-color: rgb(174, 177, 22);
+    background-color: yellow;
     border-bottom-left-radius: 100%;
 }
 
 .blue {
     grid-area: blue-side;
-    background-color: rgb(19, 19, 196);
+    background-color: blue;
     border-bottom-right-radius: 100%;
 }
 
 .selected {
     opacity: 0.5;
 }
+
+#game-control {
+  margin-left: -40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 400px;
+}
+
+li {
+  display: block;
+  list-style-type: none;
+}
+
+
+
+.play-btn {
+  appearance: button;
+  background-color: #05b841;
+  border: 1px solid #05b841;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 10px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 160px;
+}
+
+.play-btn:focus {
+  outline: 0;
+}
+
+.play-btn:hover {
+  background-color: #049c37;
+  border-color: #049c37;
+}
+
+.play-btn:active {
+  background-color: #05b841;
+  border-color: #05b841;
+}
+
+.reset-btn {
+    appearance: button;
+    background-color: #1652F0;
+    border: 1px solid #1652F0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    overflow: visible;
+    padding: 12px 10px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: all 80ms ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 160px;
+  }
+  
+  .reset-btn:focus {
+    outline: 0;
+  }
+  
+  .reset-btn:hover {
+    background-color: #0A46E4;
+    border-color: #0A46E4;
+  }
+  
+  .reset-btn:active {
+    background-color: #0039D7;
+    border-color: #0039D7;
+  }
+
+
+
